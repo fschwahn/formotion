@@ -98,6 +98,8 @@ module Formotion
       :max_image_size,
       # Font for String and Text rows
       :font,
+      # Font for label
+      :label_font,
       # Display an inputAccessoryView when editing a StringRow.
       # OPTIONS: :done (a black translucent toolbar with a right-aligned "Done" button)
       # DEFAULT is nil

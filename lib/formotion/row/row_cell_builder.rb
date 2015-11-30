@@ -18,6 +18,7 @@ module Formotion
 
       cell.accessoryType = cell.editingAccessoryType = UITableViewCellAccessoryNone
 
+      cell.textLabel.font = row.label_font if row.label_font
       cell.textLabel.text = row.title
       observe(row, "title") do |old_value, new_value|
         cell.textLabel.text = new_value
