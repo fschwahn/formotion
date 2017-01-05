@@ -15,7 +15,7 @@
 [Check](#check)<br/>
 [Slider](#slider)<br/>
 [Image](#image)<br/>
-[Option](#option)<br/>
+[Option](#options)<br/>
 [Picker](#picker)<br/>
 [Subform](#subform)<br/>
 [Template](#template)<br/>
@@ -282,6 +282,7 @@ The `StaticRow` has no input funcitonality and therefore needs no `key` property
   title: "Remember?",
   key: :remember,
   type: :switch,
+  switch_tint_color: "#00ff88" # optional
 }
 ```
 

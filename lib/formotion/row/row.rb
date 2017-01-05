@@ -24,8 +24,11 @@ module Formotion
       # DEFAULT is :date
       :picker_mode,
       # Stores possible formatting information (used by date pickers, etc)
-      #   if :type == :date, accepts values in [:short, :medium, :long, :full]
+      #   if :type == :date, accepts values in [:short, :medium, :long, :full, :string]
+      #   if string is specified it uses format string passed in date_format property
       :format,
+      # Defines detailed formatting for date (only used in DateRow)
+      :date_format,
       # alternative title for row (only used in EditRow for now)
       :alt_title,
       # determines if the user can edit the row
@@ -94,6 +97,10 @@ module Formotion
       # In a date/time or time picker, the minute interval can
       # be set. That allows picking by every 15 minutes, etc.
       :minute_interval,
+      # In a date/time or time picker
+      :minimum_date,
+      # In a date/time or time picker
+      :maximum_date,
       #-Resize image when needed (size as Array [1500,1500])
       :max_image_size,
       # Font for String and Text rows
@@ -111,6 +118,10 @@ module Formotion
       # OPTIONS: :blue, :gray, :none
       # DEFAULT is :blue
       :selection_style,
+
+      # Tint color for switch
+      # DEFAULT is nil
+      :switch_tint_color,
 
       # The following apply only to weblink rows
 
