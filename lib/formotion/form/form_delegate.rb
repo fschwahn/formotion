@@ -74,7 +74,7 @@ module Formotion
 
     def tableView(tableView, heightForRowAtIndexPath: indexPath)
       row = row_for_index_path(indexPath)
-      row.row_height || tableView.rowHeight
+      row&.row_height || tableView.rowHeight
     end
 
     def tableView(tableView, commitEditingStyle: editingStyle, forRowAtIndexPath: indexPath)
